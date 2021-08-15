@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    width: 960;
+    
+  }
+
+  body{
+    background-color: lightgray;
+  }
+
+  main{
+      display: flex;
+  }
+
+  h1 {
+    padding-left: 9vw;
+    padding-top: 40px;
+    font-size: 30px;
+    
+  }
+
+  #first{
+      display: block;
+  }
+
+  #second{
+      display: block;
+      border: 2px solid black;
+      width: 710px;
+  }
+
+  header{
+      background-color: gray;
+      height: 125px;
+
+  }
+
+  #logoimg {
+    
+    width: 75px;
+    float: left;
+    height: 75px;
+    border: 2px solid lightblue;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+  }
+
+  #image-container {
+    
+    
+    border: 2px solid black;
+    width: 960;
+    height: 220px;
+    margin-left: 25px;
+    margin-top: 20px;
+    
+
+  }
+
+  #CenterImg,
+  #leftImg,
+  #rightImg {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    
+  }
+
+  span {
+    margin-left: 50px;
+  }
+
+  #attempts {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  #lastmain{
+    border: 2px solid black;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
+  }
+
+  footer{
+    position: fixed;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: gray;
+    width: 100%;
+  }
+
+  button{
+      margin-top: 30vw;
+      margin-bottom: 50px;
+      padding: 20px;
+      background-color: red;
+      color: black;
+      font-size: 25px;
+  }
