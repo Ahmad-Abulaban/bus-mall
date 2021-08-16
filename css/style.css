@@ -87,7 +87,7 @@
   }
 
   footer{
-    position: fixed;
+    
     border: 2px solid black;
     padding: 10px;
     background-color: gray;
@@ -101,4 +101,21 @@
       background-color: red;
       color: black;
       font-size: 25px;
+  }
+
+  #myChart{
+    
+    background-color: blanchedalmond;
+    margin-top: 2vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 25vw;
+
+  
+  }
+
+  li{
+    list-style: square;
+    margin-left: 20px;
+    font-size: 20px;
   }
