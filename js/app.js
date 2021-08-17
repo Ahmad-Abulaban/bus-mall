@@ -31,6 +31,8 @@ console.log(products);
 function randomImage() {
     return Math.floor(Math.random() * products.length);
 }
+
+
 let leftIndex;
 let CenterIndex;
 let rightIndex;
@@ -79,14 +81,31 @@ function clickHandler(event) {
         renderImg();
         console.log(products);
         attempt++;
+
     } else {
 
         leftImg.removeEventListener('click', clickHandler);
         CenterImg.removeEventListener('click', clickHandler);
         rightImg.removeEventListener('click', clickHandler);
 
+
     }
 }
+
+function saveToLocalStorage() {
+    let data = JSON.stringify(products);
+    localStorage.setItem('products', data);
+}
+function readFromLocalStorage() {
+    let stringObj = localStorage.getItem('products');
+    let normalObj = JSON.parse(stringObj);
+
+    if (normalObj) {
+        products = normalObj;
+        renderImg();
+    }
+}
+readFromLocalStorage();
 
 btn.addEventListener('click', final);
 function final(){
@@ -99,11 +118,12 @@ function final(){
             times.push(products[i].times);
         }
         btn.removeEventListener('click', final);
+        renderImg();
+        saveToLocalStorage();
 
     }
     chartRender();
 }
-
 function chartRender(){
     let ctx = document.getElementById('myChart').getContext('2d');
     let myChart = new Chart(ctx, {
@@ -142,3 +162,5 @@ function chartRender(){
         }
     });
 }
+
+
